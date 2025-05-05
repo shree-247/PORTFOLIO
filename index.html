@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LALAJI</title>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+</head>
+<body style="margin: 0; padding: 0; height: 100%; font-family: Arial, sans-serif; overflow: hidden;">
+
+  <!-- Particle background -->
+  <div id="tsparticles" style="position: absolute; width: 100%; height: 100%; z-index: 0;"></div>
+
+  <!-- Main content -->
+  <div style="position: relative; z-index: 1; height: 100vh; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+    <!-- Box starts here -->
+    <div style="background: #010101; border: 2px solid white; border-radius: 20px; padding: 40px; box-shadow: 0 0 0px rgba(255,255,255,0.2); max-width: 500px; width: 90%;">
+
+      <h1 style="font-size: 2em; margin: 0;">SHRIMANT SHRIVASTAVA</h1>
+      <h2 style="font-size: 1em; color: #bfc8ca; margin-bottom: 20px;">Looking for an entry-level tech role</h2>
+
+      <div style="margin-top: 20px;">
+        <a href="https://github.com/shree-247" title="GitHub" target="_blank" style="margin: 0 10px; display: inline-block;">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" style="width: 30px; height: 30px; filter: invert(1); transition: transform 0.2s ease;">
+        </a>
+        <a href="https://www.linkedin.com/in/shrimant-shrivastava" title="LinkedIn" target="_blank" style="margin: 0 10px; display: inline-block;">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px; filter: invert(1); transition: transform 0.2s ease;">
+        </a>
+        <a href="SHRIMANT SHRIVASTAVA 24 RESUME .pdf"  title="Resume" target="_blank" style="margin: 0 10px; display: inline-block;">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/readthedocs.svg" alt="Resume" style="width: 30px; height: 30px; filter: invert(1); transition: transform 0.2s ease;">
+        </a>
+        <a href="mailto:shrimantshrivastava24@gmail.com" title="Email" style="margin: 0 10px; display: inline-block;">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/minutemailer.svg" alt="Email" style="width: 30px; height: 30px; filter: invert(1); transition: transform 0.2s ease;">
+        </a>
+          
+      </div>
+
+    </div>
+    <!-- Box ends here -->
+
+  </div>
+
+  <!-- Particle animation script -->
+  <script>
+    tsParticles.load("tsparticles", {
+      background: { color: "#000" },
+      fpsLimit: 60,
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" },
+          onClick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 },
+          push: { quantity: 4 }
+        }
+      },
+      particles: {
+        color: { value: ["#ffffff", "#feca57", "#1dd1a1", "#54a0ff", "#ff9ff3"] },
+        links: {
+          enable: true,
+          color: "#ffffff",
+          distance: 150,
+          opacity: 0.3,
+          width: 1
+        },
+        collisions: { enable: false },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: { default: "bounce" },
+          random: true,
+          speed: 1.5,
+          straight: false
+        },
+        number: { value: 80, density: { enable: true, area: 800 } },
+        opacity: {
+          value: 0.7,
+          random: true,
+          anim: { enable: true, speed: 0.5, opacity_min: 0.3, sync: false }
+        },
+        shape: { type: "circle" },
+        size: {
+          value: { min: 1, max: 5 },
+          anim: { enable: true, speed: 2, size_min: 0.5, sync: false }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
+
+</body>
+</html>
